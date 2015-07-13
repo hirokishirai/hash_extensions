@@ -1,8 +1,7 @@
 require "hash_extensions/version"
 module HashExtensions
   class ::Hash
-    class ::Hash::HashExtensionsError < StandardError; end
-
+    class HashExtensionsError < StandardError; end
     def swap(a=nil, b=nil)
       raise HashExtensionsError, "swap requires two or more elements in the hash." if self.count < 2
       keys = self.keys
