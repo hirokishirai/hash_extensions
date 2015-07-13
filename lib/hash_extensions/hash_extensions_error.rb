@@ -1,0 +1,1 @@
+class HashExtensionsError < StandardError; end
